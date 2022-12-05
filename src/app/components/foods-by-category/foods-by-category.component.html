@@ -1,7 +1,7 @@
 <div class="container">
   <h1>{{categoryName}}</h1>
   <div class="meal-list">
-    <div class="meal" *ngFor="let meal of meals; let i=index">
+    <div class="meal" *ngFor="let meal of meals; let i=index" [routerLink]="['/comida', meal.strMeal]">
       <h4>{{meal.strMeal}}</h4>
       <img src={{meal.strMealThumb}} />
     </div>

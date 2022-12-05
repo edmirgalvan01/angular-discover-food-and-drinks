@@ -8,6 +8,7 @@ import { FoodsComponent } from './components/foods/foods.component';
 import { CocktailsComponent } from './components/cocktails/cocktails.component';
 import { HomeComponent } from './components/home/home.component';
 import { FoodsByCategoryComponent } from './components/foods-by-category/foods-by-category.component';
+import { MealComponent } from './components/meal/meal.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FoodsByCategoryComponent } from './components/foods-by-category/foods-b
     CocktailsComponent,
     HomeComponent,
     FoodsByCategoryComponent,
+    MealComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
