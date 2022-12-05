@@ -1,1 +1,10 @@
-<p>foods works!</p>
+<div class="container">
+  <h1>Bienvenido a la comida internacional</h1>
+  <div class="category-list">
+    <div class="category" *ngFor="let category of categories; let i=index"
+      [routerLink]="['/comidas', category.strCategory]">
+      <h4>{{category.strCategory}}</h4>
+      <img src={{category.strCategoryThumb}} alt="">
+    </div>
+  </div>
+</div>
