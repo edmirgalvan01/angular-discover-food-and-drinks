@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Categorias de cocteles</h1>
+  <div class="categories-list">
+    <div class="category" *ngFor="let category of categories; let i=index"
+      [routerLink]="['/cocteles', category.strCategory]">
+      <h4>{{category.strCategory}}</h4>
+    </div>
+  </div>
+</div>
