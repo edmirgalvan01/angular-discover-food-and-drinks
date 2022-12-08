@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CocktailComponent } from './components/cocktail/cocktail.component';
 import { CocktailsCategoriesComponent } from './components/cocktails-categories/cocktails-categories.component';
 import { CocktailsCategoryComponent } from './components/cocktails-category/cocktails-category.component';
 import { FoodsByCategoryComponent } from './components/foods-by-category/foods-by-category.component';
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'cocteles/:cocktailCategoryName',
     component: CocktailsCategoryComponent,
+  },
+  {
+    path: 'coctel/:cocktailName',
+    component: CocktailComponent,
   },
   { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];

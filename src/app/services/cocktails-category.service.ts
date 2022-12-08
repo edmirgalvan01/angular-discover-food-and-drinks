@@ -5,16 +5,16 @@ import { map } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class FoodsByCategoryService {
-  private API_URL = 'https://www.themealdb.com/api/json/v1/1';
+export class CocktailsCategoryService {
+  private API_URL = 'https://www.thecocktaildb.com/api/json/v1/1';
 
   constructor(private http: HttpClient) {}
 
-  getMealsByCategory(category: string) {
+  getCocktailsByCategory(category: string) {
     return this.http.get(`${this.API_URL}/filter.php?c=${category}`).pipe(
       map((resp: any) => {
-        var meals = resp;
-        return meals;
+        var drinks = resp;
+        return drinks;
       })
     );
   }

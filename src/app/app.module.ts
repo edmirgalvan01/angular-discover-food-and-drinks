@@ -10,6 +10,7 @@ import { FoodsByCategoryComponent } from './components/foods-by-category/foods-b
 import { MealComponent } from './components/meal/meal.component';
 import { CocktailsCategoriesComponent } from './components/cocktails-categories/cocktails-categories.component';
 import { CocktailsCategoryComponent } from './components/cocktails-category/cocktails-category.component';
+import { CocktailComponent } from './components/cocktail/cocktail.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CocktailsCategoryComponent } from './components/cocktails-category/cock
     MealComponent,
     CocktailsCategoriesComponent,
     CocktailsCategoryComponent,
+    CocktailComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

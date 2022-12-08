@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 50px;
+}
+.drink--img {
+  margin: 0 auto;
+  max-width: 70%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.2);
+}

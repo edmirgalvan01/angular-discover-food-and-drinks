@@ -1,1 +1,9 @@
-<p>cocktails-category works!</p>
+<div class="container">
+  <h1>{{categoryName}}</h1>
+  <div class="drink-list">
+    <div class="drink" *ngFor="let drink of drinks; let i=index" [routerLink]="['/coctel', drink.strDrink]">
+      <h4>{{drink.strDrink}}</h4>
+      <img src={{drink.strDrinkThumb}} />
+    </div>
+  </div>
+</div>
